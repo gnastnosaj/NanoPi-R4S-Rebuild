@@ -1,6 +1,10 @@
 name: NanoPi R4S Rebuild
 
-on: [push]
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
